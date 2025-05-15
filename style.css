@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Chicago";
+  src: url("assets/fonts/ChicagoFLF.ttf") format("truetype");
+}
+
+:root {
+  --circle-size: 0%;
+  --x: 50%;
+  --y: 50%;
+}
+
+body {
+  font-family: "Chicago", sans-serif;
+  background-color: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#bg-loop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 1;
+  filter: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card-wrapper {
+  position: relative;
+  width: 700px;
+  height: auto;
+}
+
+.card {
+  width: 100%;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.card-content {
+  transition: opacity 0.3s ease;
+}
+
+#card1 img, #overlay img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.container-text {
+  padding: 2rem 1rem;
+  background-color: transparent;
+  color: white;
+}
+
+.firstPart {
+  padding: 1em;
+}
+
+.btn {
+  display: flex;
+  justify-content: end;
+}
+
+.read-more {
+  background-color: #000000;
+  padding: 0.5em;
+  border-radius: 30px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.green, .black {
+  background-color: #000;
+  color: #fff;
+  fill: #fff;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  clip-path: circle(var(--circle-size) at var(--x) var(--y));
+  transition: clip-path 0.1s ease, opacity 0.2s ease;
+}
+
+/* 🦊 Floating Wallet Button */
+#wallet-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 0.4em 0.8em;
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  text-align: right;
+}
+
+#wallet-button button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Chicago", sans-serif;
+}
+
+#wallet-status {
+  margin-bottom: 0.3em;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.pill-btn {
+  padding: 12px 36px; /* Adds space inside the button */
+  border-radius: 999px; /* Makes the button round like a pill */
+  border: none; /* Removes any border */
+  background: linear-gradient(90deg, #222 60%, #444 100%); /* Adds a gradient background */
+  color: #fff; /* Makes the text white */
+  font-size: 1.1rem; /* Increases the text size */
+  font-weight: 600; /* Makes the text bold */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background 0.2s, box-shadow 0.2s; /* Adds smooth hover animations */
+  outline: none; /* Removes the outline when the button is clicked */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12); /* Adds a soft shadow */
+}
+
+.pill-btn:hover {
+  transform: scale(1.05); /* Slightly enlarges the button */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adds a glowing effect */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth animation */
+}

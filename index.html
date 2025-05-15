@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>retroverse MultiPass</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body>
+  <!-- 🔁 Background Visual -->
+  <img id="bg-loop" src="assets/loop.gif" alt="visual loop background" />
+
+  <!-- 🔊 Audio Cues -->
+  <audio id="hover-sound" src="assets/hover.mp3" preload="auto"></audio>
+  <audio id="click-sound" src="assets/click.mp3" preload="auto"></audio>
+  <!-- 🔊 Audio Cues -->
+<audio id="hover-vo1" src="assets/Vo1.mp3" preload="auto"></audio>
+<audio id="click-vo2" src="assets/Vo2.mp3" preload="auto"></audio>
+  <!-- 🦊 Wallet Connect -->
+  <div id="wallet-status" style="margin-bottom: 10px;">🔌 Not Connected</div>
+<button onclick="connectWallet()" class="btn pill-btn" style="margin-bottom: 20px;">
+  <img src="assets/icon-paw1.svg" alt="Custom Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;" />
+  Sync tEE-doGG
+</button>
+
+  <!-- 🪪 Multi-Pass UI -->
+  <div class="container">
+    <div class="card-wrapper">
+      <div id="card1" class="card card-photo">
+        <div class="card-content">
+          <div id="rowOne" class="firstPart">
+            <h2>MULTI-PASS</h2>
+            <img src="https://i.ibb.co/HTp9dgjx/retroverse-MAY2025-1.jpg" alt="Sparkler">
+          </div>
+          <div class="container-text">
+            <p>Backspace to the Infinite Backrooms</p>
+            <div class="btn">
+              <a href="#" class="read-more black">Enter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="overlay" class="card">
+        <div id="rowTwo" class="firstPart">
+          <h2>MULTI PASS</h2>
+          <img src="https://i.ibb.co/39ppwJGT/Modem-Festival.jpg" title="More visuals">
+        </div>
+        <div class="container-text">
+          <p>Find the Vortex. Prepare to teleport..</p>
+          <div class="btn">
+            <a href="#" class="read-more green">Proceed</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔧 Scripts -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
