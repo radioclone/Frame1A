@@ -1,4 +1,0 @@
-[ZoneTransfer]
-ZoneId=3
-ReferrerUrl=https://cloudconvert.com/
-HostUrl=https://eu-central.storage.cloudconvert.com/tasks/1c2655d4-7bbd-4bd8-a9a4-33f5b9f054dc/Four%20Weeks.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250515%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250515T222840Z&X-Amz-Expires=86400&X-Amz-Signature=de33032dff80abc3306430eb5aca6d460119f5221d0667bedcc386336bd93863&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Four%20Weeks.mp3%22&response-content-type=audio%2Fmpeg&x-id=GetObject
